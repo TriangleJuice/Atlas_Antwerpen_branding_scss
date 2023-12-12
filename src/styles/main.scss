@@ -362,7 +362,8 @@ margin: 0px 2px;
 .a-label,
 .m-modal,
 .m-upload__dropzone,
-.m-upload__files li {
+.m-upload__files li,
+.m-flyout__content {
   border-radius: var(--border-radius);
 }
 
