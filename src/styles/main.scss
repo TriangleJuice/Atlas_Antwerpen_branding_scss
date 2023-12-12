@@ -213,6 +213,7 @@
  * -------------------------------------------------------------------
  */
 
+
  blockquote p {
   font-family: var(--FONT-FAMILY-BASE)
 }
@@ -291,9 +292,7 @@ a:focus .a-avatar.a-avatar--primary {
   border-radius: var(--border-radius-btn);
 }
 
-.o-header__button {
-  border-radius: 0px;
-}
+
 
 .m-pagination > li {
 border-radius: 100px;
@@ -340,6 +339,37 @@ margin: 0px 2px;
 }
 
 
+.a-input.has-addon-right input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.a-input.has-addon-left input {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.a-input.has-addon-right .a-input__addon {
+  border-top-right-radius:var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.a-input.has-addon-left .a-input__addon {
+  border-top-left-radius:var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.m-alert,
+.a-label,
+.m-modal,
+.m-upload__dropzone,
+.m-upload__files li {
+  border-radius: var(--border-radius);
+}
+
+.o-header__button,
+.o-footer .o-footer__button {
+  border-radius: 0px;
+}
 // .is-incompleted .m-step-indicator__number::before {
 //   border: var(--BORDER-WIDTH) solid #6f6f6f;
 // }
