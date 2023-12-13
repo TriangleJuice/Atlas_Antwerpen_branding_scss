@@ -367,6 +367,10 @@ margin: 0px 2px;
   border-radius: var(--border-radius);
 }
 
+.m-tag {
+  border-radius: var(--border-radius) !important;
+}
+
 .o-header__button,
 .o-footer .o-footer__button {
   border-radius: 0px;
