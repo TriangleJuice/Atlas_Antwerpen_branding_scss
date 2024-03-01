@@ -1,4 +1,4 @@
-# Antwerp branding variant
+# Atlas branding
 
 This project contains everything you need to make a variant of Antwerp's core branding.
 
@@ -44,14 +44,14 @@ Contact us via [branding@stad.antwerpen.be](mailto:branding@stad.antwerpen.be).
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/a-ui/core_branding_scss/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/a-ui/atlas_branding_scss/tags).
 
 ## Authors
 
 * **Jeroen Collier** - *Art director, lead design*
 * **Jasper Van Proeyen** - *Initial work, lead developer*
 
-See also the list of [contributors](https://github.com/a-ui/core_branding_scss/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/a-ui/atlas_branding_scss/contributors) who participated in this project.
 
 ## License
 

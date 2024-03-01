@@ -1,10 +1,10 @@
 {
-  "name": "@a-ui/variant",
+  "name": "@a-ui/atlas",
   "version": "1.0.0",
-  "description": "core_branding_scss",
+  "description": "atlas_branding_scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/a-ui/variant_branding_scss.git"
+    "url": "https://github.com/a-ui/atlas_branding_scss.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
