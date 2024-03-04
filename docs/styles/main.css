@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+/**
+ * CORE BRANDING OVERRIDES
+ * -------------------------------------------------------------------
+ */
+:root {
+  /**
+   * THEME COLORS
+   * -------------------------------------------------------------------
+  */
+  --theme1-800: #752537;
+  --theme1-700: #B3403C;
+  --theme1-600: #752537;
+  --theme1-500: #B3403C;
+  --theme1-400: #F05A41;
+  --theme1-300: #FF9B8A;
+  --theme1-200: #AC7C87;
+  --theme1-100: #E3D3D7;
+  --theme2-800: #339C80;
+  --theme2-700: #C8A552;
+  --theme2-600: #FFD66A;
+  --theme2-500: #78D28C;
+  --theme2-400: #FAF1E1;
+  --theme2-300: #67C3E5;
+  --theme2-200: #4D90CE;
+  --theme2-100: #CD77CD;
+  --donkergroen: var(--theme2-800, #339C80);
+  --goud: var(--theme2-700, #C8A552);
+  --geel: var(--theme2-600, #FFD66A);
+  --lichtgroen: var(--theme2-500, #78D28C);
+  --creme: var(--theme2-400, #FAF1E1);
+  --lichtblauw: var(--theme2-300, #67C3E5);
+  --donkerblauw: var(--theme2-200, #4D90CE);
+  --paars: var(--theme2-100, #CD77CD);
+  --gray-600: #3C2828;
+  --gray-500: #5D4C4C;
+  --gray-400: #7D7070;
+  --gray-300: #9E9393;
+  --gray-200: #BEB7B7;
+  --gray-100: #ECECEC;
+  --success-700: #1E3423;
+  --success-600: #3C6946;
+  --success-500: #5A9E69;
+  --success-400: #78D28C;
+  --success-300: #93DBA3;
+  --success-200: #AEE4BA;
+  --success-100: #E4F6E8;
+  --warning-500: #8F3400;
+  --warning-400: #CE4C00;
+  --danger-700: #E03C31;
+  --danger-600: #AF272F;
+  --danger-500: #AF272F;
+  --danger-400: #E03C31;
+  --danger-300: #E56A54;
+  --danger-200: #E6BAA8;
+  --danger-100: #F3CFB3;
+  /**
+   * UI COLORS
+   * -------------------------------------------------------------------
+   */
+  --text-color: var(--gray-600);
+  --state-success: var(--success-600);
+  --state-warning: var(--warning-400);
+  --state-danger: var(--danger-500);
+  /**
+   * SPACERS
+   * -------------------------------------------------------------------
+   */
+  /**
+   * BREAKPOINTS
+   * -------------------------------------------------------------------
+   */
+  /**
+   * FONT FAMILIES
+   * -------------------------------------------------------------------
+   */
+  --font-family-base: "Noto Sans", sans-serif;
+  --font-family-headings: "Noto Sans", sans-serif;
+  /**
+   * FONT WEIGHTS
+   * -------------------------------------------------------------------
+   */
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  --font-weight-h1: var(--font-weight-bold, 600);
+  --font-weight-h2: var(--font-weight-bold, 600);
+  --font-weight-h3: var(--font-weight-bold, 600);
+  --font-weight-h4: var(--font-weight-bold, 600);
+  --font-weight-h5: var(--font-weight-bold, 600);
+  --font-weight-h6: var(--font-weight-bold, 600);
+  /**
+   * LINKS
+   * -------------------------------------------------------------------
+   * Define text and hover color for each hyperlink
+   */
+  --link-color: var(--theme1-600);
+  --link-hover-color: var(--theme1-400);
+  /**
+   * BORDERS
+   * -------------------------------------------------------------------
+   */
+  --border-radius: 4px;
+  --border-color: var(--theme1-600);
+  /**
+   * ANIMATIONS
+   * -------------------------------------------------------------------
+   */
+  /**
+   * BOX SHADOWS
+   * -------------------------------------------------------------------
+   */
+  /**
+   * EXTRA VARIABLES 4 ATLAS
+   * -------------------------------------------------------------------
+   */
+  --border-radius-btn: 40px;
+}
+
+/**
+ * CUSTOM STYLING BY SHTICK
+ * -------------------------------------------------------------------
+ */
+.a-button:hover .a-avatar.a-avatar--primary,
+.a-button:active .a-avatar.a-avatar--primary,
+.a-button:focus .a-avatar.a-avatar--primary {
+  background-color: var(--theme1-100);
+  color: var(--theme1-600);
+}
+
+.a-range-slider__tickmark {
+  background-color: var(--theme1-600);
+}
+
+a:hover .a-avatar.a-avatar--primary,
+a:active .a-avatar.a-avatar--primary,
+a:focus .a-avatar.a-avatar--primary {
+  background-color: var(--theme1-600);
+  color: var(--theme1-100);
+}
+
+.a-badge.a-badge--outlined {
+  --badge-border-color: var(--gray-400);
+}
+
+.a-copyright {
+  background-color: var(--gray-600);
+}
+
+.a-switch {
+  --switch-bg-color: var(--gray-300) ;
+}
+
+.a-button--outlined.a-button--danger:hover {
+  background-color: var(--danger-50);
+}
+
+.u-bg-secondary {
+  color: var(--text-color) !important;
+}
+
+blockquote p {
+  font-family: var(--FONT-FAMILY-BASE);
+}
+
+blockquote cite {
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color);
+}
+
+.a-avatar {
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--border-radius-btn);
+}
+
+.m-flyout.is-open.m-flyout--upper-left.d-flyout--opens-above .m-flyout__content,
+.m-flyout.is-open.m-flyout--upper-right.d-flyout--opens-above .m-flyout__content {
+  transform: translateY(calc(-100% - var(--SPACER-XL) - 10px));
+}
+
+.m-flyout.is-open > .m-flyout__content {
+  transform: translateY(10px);
+}
+
+.m-datepicker__grid-body button.is-faded {
+  border-radius: 0px;
+}
+
+.m-datepicker__nav-pagination .a-button {
+  border-radius: var(--border-radius);
+}
+
+.a-button {
+  border-radius: var(--border-radius-btn);
+}
+
+.m-step-indicator__number:before {
+  border-radius: var(--border-radius-btn);
+}
+
+.m-pagination > li {
+  border-radius: 100px;
+  margin: 0px 2px;
+}
+
+.m-pagination > li + li {
+  margin-left: 2px;
+}
+
+.m-pagination > li:first-child,
+.m-pagination > li:first-child > a,
+.m-pagination > li:last-child,
+.m-pagination > li:last-child > a,
+.m-pagination > li > a.is-active,
+.m-pagination > li > a:hover,
+.m-pagination > li > a:active,
+.m-pagination > li > a:focus,
+.m-pagination > li > a.is-active {
+  border-radius: 100px;
+}
+
+.m-pagination > li > a {
+  box-shadow: unset;
+  transition: background-color 200ms;
+  transition-property: unset;
+  transition-timing-function: unset;
+}
+
+.m-pagination > li > a.is-active,
+.m-pagination > li > a:hover,
+.m-pagination > li > a:active,
+.m-pagination > li > a:focus,
+.m-pagination > li > a.is-active {
+  box-shadow: 0 0 0 var(--BORDER-WIDTH) var(--theme1-600) inset;
+}
+
+.m-pagination > li > a.is-disabled {
+  box-shadow: 0 0 0 var(--BORDER-WIDTH) var(--pagination-disabled-border) inset;
+}
+
+.m-step-indicator {
+  --step-indicator-square-active-border-color: var(--theme1-600);
+}
+
+.m-pagination .ai {
+  margin-top: -4px;
+}
+
+.m-upload__delete.a-button.a-button--text.a-button--danger.a-button--s.has-icon {
+  border-radius: 0px;
+}
+
+.a-input.has-addon-right input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.a-input.has-addon-left input {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.a-input.has-addon-right .a-input__addon {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.a-input.has-addon-left .a-input__addon {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.m-alert,
+.a-label,
+.m-modal,
+.m-upload__dropzone,
+.m-upload__files li,
+.m-flyout__content {
+  border-radius: var(--border-radius);
+}
+
+.m-tag {
+  border-radius: var(--border-radius) !important;
+}
+
+.o-header__button,
+.o-footer .o-footer__button {
+  border-radius: 0px;
+}
